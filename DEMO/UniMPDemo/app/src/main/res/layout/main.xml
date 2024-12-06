@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/ffffff"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="Start the applet with splash"
+                android:textColor="@color/ffffff"
+                android:textSize="14sp"></Button>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="Start applet without splash"
+                android:textColor="@color/ffffff"
+                android:textSize="14sp"></Button>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="Launch the mini program to go directly to the secondary page"
+                android:textColor="@color/ffffff"
+                android:textSize="14sp"></Button>
+                
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="Delay 5 seconds to close the opened applet"
+                android:textColor="@color/ffffff"
+                android:textSize="14sp"></Button>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="Get the version information of the application that has been run"
+                android:textColor="@color/ffffff"
+                android:textSize="14sp"></Button>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="Native extension module example"
+                android:textColor="@color/ffffff"
+                android:textSize="14sp"></Button>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="Mini Program and Host Intercommunication Example"
+                android:textColor="@color/ffffff"
+                android:textSize="14sp"></Button>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="Mini Program calls the host's personality pop-up window"
+                android:textColor="@color/ffffff"
+                android:textSize="14sp"></Button>
+
+            <Button
+                android:id="@+id/btn_encrypt_wgt_install"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="Remotely download encrypted wgt and install it"
+                android:textColor="@color/ffffff"
+                android:textSize="14sp"></Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

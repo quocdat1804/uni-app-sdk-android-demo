@@ -1,0 +1,50 @@
+<template>
+	<div>
+		<button type="primary" @click="testAsyncFunc">testAsyncFunc</button>
+		<button type="primary" @click="testSyncFunc">testSyncFunc</button>
+		<text>syncRet:{{JSON.stringify(syncRet)}}</text>
+		<button type="primary" @click="gotoNativePage">跳转原生Activity</button>
+		<button type="primary" @click="gotoHostNativePage">跳转宿主原生Activity弹窗</button>
+		<button type="primary" @click="quitUnimp">退出当前小程序</button>
+	</div>
+</template>
+
+<script>
+	// 获取 module 
+	var testModule = uni.requireNativePlugin("TestModule")
+	export default {
+		data:{
+			syncRet:{}
+		},
+		methods: {
+			testAsyncFunc() {
+				// 调用异步方法
+				testModule.testAsyncFunc({
+						'name': 'unimp',
+						'age': 1
+					},
+					(ret) => {
+						console.log(ret)
+					})
+			},
+			testSyncFunc() {
+				// 调用同步方法
+				var ret = testModule.testSyncFunc({
+					'name': 'unimp',
+					'age': 1
+				})
+				this.syncRet = ret;
+				console.log(ret)
+			},
+			gotoNativePage() {
+				testModule.gotoNativePage();
+			},
+			quitUnimp() {
+				plus.runtime.quit()
+			},
+			gotoHostNativePage() {
+				testModule.gotoHostNativePage();
+			}
+		}
+	}
+</script>

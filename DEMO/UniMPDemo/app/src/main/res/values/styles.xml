@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ProjectDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowNoTitle">true</item><!-- Activity without title -->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- No background outside dialog -->
+        <item name="android:windowCloseOnTouchOutside">false</item><!-- Clicking outside the dialog has no effect-->
+    </style>
+
+</resources>
